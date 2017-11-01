@@ -1,7 +1,7 @@
 const {ObjectID} = require('mongodb');
 
 const {mongoose} = require('./../server/db/mongoose');
-// const {Todo} = require('./../server/models/todo');
+const {Todo} = require('./../server/models/todo');
 const {User} = require('./../server/models/user');
 
 var id = '59f712176bbdb425c43a9cb5';
@@ -16,7 +16,7 @@ if(!ObjectID.isValid(id)) {
     console.log(JSON.stringify(user, undefined, 2)); // 'User by Id', user
   }).catch((e) => {
     console.log(e);
-  })
+  });
 }
 
 // Todo.find({
