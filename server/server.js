@@ -1,7 +1,7 @@
 require('./config/config.js');
 
 const _ = require('lodash');
-process.env.PORT = 3000;
+//process.env.PORT = 3000;
 const express = require('express');
 const bodyParser = require('body-parser');
 const {ObjectID} = require('mongodb');
